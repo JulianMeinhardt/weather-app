@@ -1,8 +1,9 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import APIService from '../services/api.service';
+import Forecast from './forecast';
 
 @Component({
-  selector: 'app-root',
+  selector: 'forecast',
   templateUrl: './forecast.component.html',
   styleUrls: ['./forecast.component.scss']
 })
@@ -10,11 +11,12 @@ import APIService from '../services/api.service';
 @Injectable()
 export class ForecastComponent implements OnInit {
 
+  forecast: Forecast;
   constructor(private apiService: APIService) {
   }
 
   async getWeatherInformationByZIP(zip: string) {
-    await this.apiService.getWeatherDataForZip(zip);
+    this.forecast = await this.apiService.getWeatherDataForZip(zip);
   }
 
   ngOnInit() {

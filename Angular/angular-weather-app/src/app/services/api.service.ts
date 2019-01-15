@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import Forecast from '../forecast/forecast';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export default class APIService {
@@ -9,9 +11,10 @@ export default class APIService {
 
   }
 
-  async getWeatherDataForZip(zip: string) {
+  async getWeatherDataForZip(zip: string): Forecast {
     // TODO: Check for valid zip
     const url = `${this.API_ENDPOINT}?zip=${zip},de&appiId=${this.APIKEY}`;
-    return await this.http.get(url);
+    const data = new Forecast(this.http.get(url));
+    return await data;
   }
 }
