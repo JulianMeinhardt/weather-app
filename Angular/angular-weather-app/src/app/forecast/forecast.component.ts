@@ -15,8 +15,9 @@ export class ForecastComponent implements OnInit {
   constructor(private apiService: APIService) {
   }
 
-  async getWeatherInformationByZIP(zip: string) {
-    this.forecast = await this.apiService.getWeatherDataForZip(zip);
+  getWeatherInformationByZIP(zip: string) {
+    this.apiService.getWeatherDataForZip(zip).subscribe((data: Forecast) => {
+    });
   }
 
   ngOnInit() {

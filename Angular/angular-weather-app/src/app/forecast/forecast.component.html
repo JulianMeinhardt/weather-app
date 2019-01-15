@@ -1,3 +1,9 @@
 <div>
-  <h1> HELLO FORECAST </h1>
+  <h1> Welcome </h1>
+  <div class=".location-input">
+    <input #zipCode placeholder="Please enter the zip/postal code of the location">
+    <button (click)="getWeatherInformationByZIP(zipCode.value)">Search</button>
+  </div>
+
+  <div>Hier könnte ihr Wetter stehen</div>
 </div>

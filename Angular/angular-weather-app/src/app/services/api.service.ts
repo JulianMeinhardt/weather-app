@@ -11,10 +11,10 @@ export default class APIService {
 
   }
 
-  async getWeatherDataForZip(zip: string): Forecast {
+  getWeatherDataForZip(zip: string): Observable<Forecast> {
     // TODO: Check for valid zip
-    const url = `${this.API_ENDPOINT}?zip=${zip},de&appiId=${this.APIKEY}`;
-    const data = new Forecast(this.http.get(url));
-    return await data;
+    const url = `${this.API_ENDPOINT}?zip=${zip},de&appId=${this.APIKEY}`;
+    const data = this.http.get<Forecast>(url);
+    return data;
   }
 }
