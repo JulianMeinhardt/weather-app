@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import APIService from '../services/api.service'
 
 import { ForecastComponent } from './forecast.component';
+import { WeatherComponent } from './weather/weather.component';
 
 describe('AttachmentComponent', () => {
   let component: ForecastComponent;
@@ -14,7 +15,8 @@ describe('AttachmentComponent', () => {
         HttpClientModule
       ],
       declarations: [
-        ForecastComponent
+        ForecastComponent,
+        WeatherComponent
       ],
       providers: [
         APIService

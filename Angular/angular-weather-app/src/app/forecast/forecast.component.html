@@ -5,5 +5,10 @@
     <button (click)="getWeatherInformationByZIP(zipCode.value)">Search</button>
   </div>
 
-  <div>Hier könnte ihr Wetter stehen</div>
+
+  <div>
+
+    <weather-component *ngFor="let day of forecast.data.list"></weather-component>
+    Hier könnte ihr Wetter stehen
+  </div>
 </div>
