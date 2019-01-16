@@ -1,4 +1,5 @@
-import { Component, Injectable } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import Weather from './weather';
 
 @Component({
   selector: 'weather-component',
@@ -6,10 +7,14 @@ import { Component, Injectable } from '@angular/core';
   styleUrls: ['./weather.component.scss']
 })
 
-@Injectable()
 export class WeatherComponent {
-  private data: Object;
-  constructor(data) {
-    this.data = data;
+
+  constructor() {
   }
+
+  @Input()
+  set weather(data: any) {
+    this.weather = new Weather(data);
+  }
+
 }

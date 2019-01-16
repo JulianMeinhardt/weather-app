@@ -16,7 +16,8 @@ export class ForecastComponent implements OnInit {
   }
 
   getWeatherInformationByZIP(zip: string) {
-    this.apiService.getWeatherDataForZip(zip).subscribe((data: Forecast) => {
+    this.apiService.getWeatherDataForZip(zip).subscribe((data: string) => {
+      this.forecast = new Forecast(data);
     });
   }
 

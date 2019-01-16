@@ -2,12 +2,12 @@ export default class Forecast {
   daysOfForecast: number;
   city: string;
   zip: string;
-  data: object;
+  data: any[];
 
-  constructor(json: string) {
-    const response = JSON.parse(json);
+  constructor(response: any) {
     this.daysOfForecast = 5;
     this.city = '00000';
-    this.data = response;
+    this.data = [...response.list]
   }
+
 }
