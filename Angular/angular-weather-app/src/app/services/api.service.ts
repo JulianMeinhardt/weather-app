@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export default class APIService {
   APIKEY: string = 'fd8afcaaa6e3a0ed5060ca970c2c268b';
-  API_ENDPOINT: string = 'http://api.openweathermap.org/data/2.5/weather'
+  API_ENDPOINT: string = 'http://api.openweathermap.org/data/2.5/forecast'
   constructor(private http: HttpClient) {
 
   }
