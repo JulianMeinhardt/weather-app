@@ -26,7 +26,7 @@ export default (weather) => {
       mappedWeatherName = 'snow';
       break;
     case '50d' || '50n':
-      mappedWeatherName = 'sunny';
+      mappedWeatherName = 'mist';
       break;
     default:
       mappedWeatherName = "sunny";

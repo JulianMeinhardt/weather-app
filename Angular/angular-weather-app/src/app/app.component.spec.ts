@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ForecastComponent } from './forecast/forecast.component';
+import { WeatherComponent } from './forecast/weather/weather.component';
 import APIService from '../app/services/api.service'
 
 describe('AppComponent', () => {
@@ -14,7 +15,8 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        ForecastComponent
+        ForecastComponent,
+        WeatherComponent
       ],
       providers: [
         APIService
