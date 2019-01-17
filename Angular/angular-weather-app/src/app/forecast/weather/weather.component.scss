@@ -16,10 +16,21 @@ i{
     height: 325px;
     background: url(../../../assets/icons_sprite.jpg) 0 0;
   }
+  &.broken-clouds{
+    width: 325px;
+    height: 325px;
+    background: url(../../../assets/icons_sprite.jpg) -650px 0;
+  }
   &.rainy{
     width: 325px;
     height: 325px;
     background: url(../../../assets/icons_sprite.jpg) 0 -325px;
+  }
+
+  &.shower-rain{
+    width: 325px;
+    height: 325px;
+    background: url(../../../assets/icons_sprite.jpg) 0 -650px;
   }
   &.thunderstorm{
     width: 325px;
@@ -30,5 +41,10 @@ i{
     width: 325px;
     height: 325px;
     background: url(../../../assets/icons_sprite.jpg) -650px -325px;
+  }
+  &.mist{
+    width: 325px;
+    height: 325px;
+    background: url(../../../assets/icons_sprite.jpg) -975px -325px;
   }
 }

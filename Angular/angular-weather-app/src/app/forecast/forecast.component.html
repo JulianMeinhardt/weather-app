@@ -8,7 +8,7 @@
 
   <div *ngIf="forecast != null">
 
-    <weather-component *ngFor="let day of forecast.data" [weather]="day.main"></weather-component>
+    <weather-component *ngFor="let day of forecast.data" [weatherData]="day"></weather-component>
     Hier könnte ihr Wetter stehen
   </div>
 </div>

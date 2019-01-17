@@ -9,12 +9,13 @@ import Weather from './weather';
 
 export class WeatherComponent {
 
+  private _weather: Weather;
   constructor() {
   }
 
   @Input()
-  set weather(data: any) {
-    this.weather = new Weather(data);
+  set weatherData(data: any) {
+    this._weather = new Weather(data);
   }
 
 }

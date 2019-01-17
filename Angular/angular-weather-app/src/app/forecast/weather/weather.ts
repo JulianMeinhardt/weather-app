@@ -1,7 +1,11 @@
+import mapWeatherHelper from '../../helper/weatherMapping';
+
 export default class Weather {
-  private timestamp: Date;
+  private _timestamp: Date;
+  private _icon: string;
 
   constructor(data: any) {
-    this.timestamp = data.dt;
+    this._timestamp = new Date(data.dt_txt);
+    this._icon = mapWeatherHelper(data.weather[0].icon);
   }
 }
