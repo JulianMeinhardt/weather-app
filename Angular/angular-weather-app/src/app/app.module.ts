@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ForecastComponent } from './forecast/forecast.component';
 import { WeatherComponent } from './forecast/weather/weather.component';
 import APIService from '../app/services/api.service'
+import LocationService from '../app/services/location.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,10 @@ import APIService from '../app/services/api.service'
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [APIService],
+  providers: [
+    APIService,
+    LocationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

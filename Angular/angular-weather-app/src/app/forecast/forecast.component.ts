@@ -1,5 +1,6 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import APIService from '../services/api.service';
+import LocationService from '../services/location.service';
 import Forecast from './forecast';
 
 @Component({
@@ -12,7 +13,7 @@ import Forecast from './forecast';
 export class ForecastComponent implements OnInit {
 
   forecast: Forecast;
-  constructor(private apiService: APIService) {
+  constructor(private apiService: APIService, private locationService: LocationService) {
   }
 
   getWeatherInformationByZIP(zip: string) {
@@ -22,6 +23,9 @@ export class ForecastComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getWeatherInformationByZIP('64521');
+    this.locationService.getCurrentLocation();
+    this.locationService.getZIPByGeolocation().subscribe((data: string) => {
+      console.log('response of location service', data);
+    })
   }
 }
