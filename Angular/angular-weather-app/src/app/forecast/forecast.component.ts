@@ -23,9 +23,8 @@ export class ForecastComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.locationService.getCurrentLocation();
-    this.locationService.getZIPByGeolocation().subscribe((data: string) => {
-      console.log('response of location service', data);
-    })
+    this.locationService.getZIPByGeolocation().then ((result) =>{
+      this.getWeatherInformationByZIP(result);
+    });
   }
 }

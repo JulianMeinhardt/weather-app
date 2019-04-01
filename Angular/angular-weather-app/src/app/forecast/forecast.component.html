@@ -6,9 +6,7 @@
   </div>
 
 
-  <div *ngIf="forecast != null">
-
-    <weather-component *ngFor="let day of forecast.data" [weatherData]="day"></weather-component>
-    Hier könnte ihr Wetter stehen
+  <div *ngIf="forecast != null" class="weather-container">
+   <weather-component *ngFor="let day of forecast.data" [weatherData]="day" class="weather-component"></weather-component>
   </div>
 </div>
