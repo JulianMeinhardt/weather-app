@@ -1,4 +1,9 @@
-<div>
-  <span class="timestamp">{{_weather._timestamp}}</span>
-  <i class="{{_weather._icon}}"></i>
-</div>
+<mat-card>
+  <mat-card-title>
+      <span class="timestamp-weekday">{{_weather._timestamp.getDay()}}</span>
+      <span class="timestamp">{{_weather._timestamp | date:'shortDate'}}</span>
+  </mat-card-title>
+  <mat-card-content>
+      <i class="{{_weather._icon}}"></i>
+  </mat-card-content>
+</mat-card>

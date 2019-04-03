@@ -38,8 +38,6 @@ export default class LocationService {
       const position = await this.getCoordinates();
       this.geolocation = position.coords;
       const geocodes = await this.reverseGeoCode();
-
-
       // Actually return a value
       return geocodes.address.postcode;
    }
