@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import Weather from './weather';
 
 @Component({
-  selector: 'weather-component',
+  selector: 'app-weather-component',
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.scss']
 })

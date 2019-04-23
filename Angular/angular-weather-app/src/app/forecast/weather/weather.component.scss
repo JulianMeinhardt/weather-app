@@ -1,50 +1,59 @@
 i{
   display: block;  
 
-  &.sunny{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) -650px -650px;
+  &.sunny{    
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 66% no-repeat;
+    background-size: 360%;
   }
   &.partly-cloudy{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) -325px 0;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 0 no-repeat;
+    background-size: 360%;
   }
   &.cloudy{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) 0 0;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 0 0 no-repeat;
+    background-size: 360%;
   }
   &.broken-clouds{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) -650px 0;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 0 no-repeat;
+    background-size: 360%;
   }
   &.rainy{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) 0 -325px;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 0 33% no-repeat;
+    background-size: 360%;
   }
 
   &.shower-rain{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) 0 -650px;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 0 66% no-repeat;
+    background-size: 360%;
   }
   &.thunderstorm{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) -975px 0;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 100% 0 no-repeat;
+    background-size: 360%;
   }
   &.snow{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) -650px -325px;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 33% no-repeat;
+    background-size: 360%;
   }
   &.mist{
-    width: 325px;
-    height: 325px;
-    background: url(../../../assets/icons_sprite.jpg) -975px -325px;
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 100% 33% no-repeat;
+    background-size: 360%;
   }
 }

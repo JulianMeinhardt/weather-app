@@ -4,7 +4,7 @@ import LocationService from '../services/location.service';
 import Forecast from './forecast';
 
 @Component({
-  selector: 'forecast',
+  selector: 'app-forecast',
   templateUrl: './forecast.component.html',
   styleUrls: ['./forecast.component.scss']
 })
