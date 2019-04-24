@@ -1,0 +1,59 @@
+i{
+  display: block;  
+
+  &.sunny{    
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 66% no-repeat;
+    background-size: 360%;
+  }
+  &.partly-cloudy{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 0 no-repeat;
+    background-size: 360%;
+  }
+  &.cloudy{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 0 0 no-repeat;
+    background-size: 360%;
+  }
+  &.broken-clouds{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 0 no-repeat;
+    background-size: 360%;
+  }
+  &.rainy{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 0 33% no-repeat;
+    background-size: 360%;
+  }
+
+  &.shower-rain{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 0 66% no-repeat;
+    background-size: 360%;
+  }
+  &.thunderstorm{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 100% 0 no-repeat;
+    background-size: 360%;
+  }
+  &.snow{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 66% 33% no-repeat;
+    background-size: 360%;
+  }
+  &.mist{
+    width: 100%;
+    height: 200px;
+    background: url(../../../assets/icons_sprite.jpg) 100% 33% no-repeat;
+    background-size: 360%;
+  }
+}

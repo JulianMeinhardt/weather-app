@@ -1,0 +1,34 @@
+i{
+  display: block;  
+}
+
+.sunny{
+  width: 325px;
+  height: 325px;
+  background: url(../src/assets/icons_sprite.jpg) -650px -650px;
+}
+.partly-cloudy{
+  width: 325px;
+  height: 325px;
+  background: url(../src/assets/icons_sprite.jpg) -325px 0;
+}
+.cloudy{
+  width: 325px;
+  height: 325px;
+  background: url(../src/assets/icons_sprite.jpg) 0 0;
+}
+.rainy{
+  width: 325px;
+  height: 325px;
+  background: url(../src/assets/icons_sprite.jpg) 0 -325px;
+}
+.thunderstorm{
+  width: 325px;
+  height: 325px;
+  background: url(../src/assets/icons_sprite.jpg) -975px 0;
+}
+.snow{
+  width: 325px;
+  height: 325px;
+  background: url(../src/assets/icons_sprite.jpg) -650px -325px;
+}

@@ -1,16 +1,26 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { ForecastComponent } from './forecast/forecast.component';
+import { WeatherComponent } from './forecast/weather/weather.component';
+import APIService from '../app/services/api.service'
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        ForecastComponent,
+        WeatherComponent
       ],
+      providers: [
+        APIService
+      ]
     }).compileComponents();
   }));
 
@@ -23,13 +33,7 @@ describe('AppComponent', () => {
   it(`should have as title 'my-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('my-app');
+    expect(app.title).toEqual('my awesome weather app');
   });
 
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to my-app!');
-  });
 });

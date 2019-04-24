@@ -1,0 +1,22 @@
+.weather-component{
+    flex: 17%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.weather-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location-input {
+    width: 100%;
+
+    mat-form-field {
+        width: 80%;
+        margin-right: 20px;
+    }
+    button {
+        width: 15%;
+    }
+}
